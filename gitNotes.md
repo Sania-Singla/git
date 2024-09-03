@@ -1,8 +1,8 @@
 # git notes
 
-## ' ~ ' represents that we are in the root directory of the system
-## git - VCS (version control system) : an app installed on device that keep tracks of the changes so we install gitbash for windows
-## Github is a website where we can reflect the changes and push the code and colaborate 
+## * ' ~ ' represents that we are in the root directory of the system
+## * git - VCS (version control system) : an app installed on device that keep tracks of the changes so we install gitbash for windows
+## * Github is a website where we can reflect the changes and push the code and colaborate 
 
 ## basic commands:
     git --version 
