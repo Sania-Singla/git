@@ -62,38 +62,41 @@ ex: add a new remote repo and name it origin
 
 ⭐BRANCH COMMANDS:so when multiple persons are working on a same project so we create multiple copies of the repo and then merge them at end
 ### SYNTAX:
-** git branch (to check current branch)
-** git branch -M <new name> ( to rename a branch )
-** git checkout <branch name> (to navigate to some other branch)
-** git checkout -b <branch name> (to create a new branch & will navigate also)
-** git branch -d <branch name> (to delete a branch) ( cant delete current branch )
-******then if we make any changes they will be only present in that branch and after that when we push we need to use => git push origin <branch name>
+   git branch (to check current branch)
+   git branch -M <new name> ( to rename a branch )
+   git checkout <branch name> (to navigate to some other branch)
+   git checkout -b <branch name> (to create a new branch & will navigate also)
+   git branch -d <branch name> (to delete a branch) ( cant delete current branch )
+****then if we make any changes they will be only present in that branch and after that when we push we need to use => git push origin <branch name>
 
 ⭐merging branches:
 1) using cmd:
 ### SYNTAX:
-git diff <branch name> (to compare commits,branches,files & more) ( will compare the current branch to this branch which we entered in the command)
-git merge <branch name> (to merge 2 branches)
+    git diff <branch name> (to compare commits,branches,files & more) ( will compare the current branch to this branch which we entered in the command)
+    git merge <branch name> (to merge 2 branches)
 
 2) using Pull Request on github
-so we pull request on github and then to reflect that merge on local folder we use pull command: git pull origin <branch name to pull(feature) into the current branch(main)>
+so we pull request on github and then to reflect that merge on local folder we use pull command: 
+### SYNTAX:
+    git pull origin <branch name to pull(feature) into the current branch(main)>
 
 *** resolving merge conflicts : when both branches have some changes to same lines so which ones to keep ?? so we will manually delete the one we dont want
 
 ⭐git log : to check all the commits 
 ⭐UNDOING CHANGES: there are three scenarios
+
 1) staged changes: 
 ### SYNTAX:
-git reset <filename>
-git reset (will reset all files after the latest commit)
+    git reset <filename>
+    git reset (will reset all files after the latest commit)
 
 2) commited changes: (for one commit)
 ### SYNTAX:
-git reset HEAD~1 (will move the head(last commit) backwards by 1 step)
+    git reset HEAD~1 (will move the head(last commit) backwards by 1 step)
 
 3) commited changes: (for multiple commits)
 ### SYNTAX:
-git reset <commit hash code>
-git reset --hard <hash code> (will undo the changes on vs code also)
+    git reset <commit hash code>
+    git reset --hard <hash code> (will undo the changes on vs code also)
 
 ⭐can use 'q' for quitting 
