@@ -19,12 +19,14 @@ since we only have one git account so will use global and then all teh changes w
 
 ## COMMANDS:
 ⭐CLONE a repo : this will copy any repo into our device
-### SYNTAX: git clone <link of the project>
+### SYNTAX: 
+    git clone <link of the project>
 we can get the link of the repo from the code option and then copy the https link 
 **there is always some hidden files  (.git) and folders in all folders which are git repos so get a list of them run ls -a (use cmd not powershell ok!!)
 
 ⭐STATUS: tell about the status of the code
-### SYNTAX: git status
+### SYNTAX: 
+    git status
 there are four statuses:
 *untracked: files which are not tracked by git (every new file is untracked until we commit)
 *modified (M): when we make any change
@@ -32,14 +34,17 @@ there are four statuses:
 *staged: file is ready to be commited (because before commiting we have to add the changes(makes the files staged))
 
 ⭐ADD:adds new or changed files in the working directory to the git staging area
-### SYNTAX: git add <filename>
+### SYNTAX: 
+    git add <filename>
 git status . (for all the changes to be added from all files in one go)
 
 ⭐COMMIT: it is the record of the changes
-### SYNTAX: git commit -m "some message" (but they wont reflect on github yet)
+### SYNTAX: 
+    git commit -m "some message" (but they wont reflect on github yet)
 
 ⭐PUSH: upload the changes on github now (remote repo (github repos) , local repo (our device or PC ) )
-### SYNTAX: git push origin main 
+### SYNTAX: 
+    git push origin main 
 *origin means push on the cloned repo out of all the remote repos (the target repo basically which is named as origin)
 and there can be multiple branched in a repo so currently we are pushing on to the main branch
 
@@ -56,6 +61,7 @@ ex: add a new remote repo and name it origin
     short form : git push -u origin main ( created an upstream: so that everytime we dont have to write this we can now just write git push )
 
 ⭐BRANCH COMMANDS:so when multiple persons are working on a same project so we create multiple copies of the repo and then merge them at end
+### SYNTAX:
 ** git branch (to check current branch)
 ** git branch -M <new name> ( to rename a branch )
 ** git checkout <branch name> (to navigate to some other branch)
@@ -65,6 +71,7 @@ ex: add a new remote repo and name it origin
 
 ⭐merging branches:
 1) using cmd:
+### SYNTAX:
 git diff <branch name> (to compare commits,branches,files & more) ( will compare the current branch to this branch which we entered in the command)
 git merge <branch name> (to merge 2 branches)
 
@@ -76,13 +83,16 @@ so we pull request on github and then to reflect that merge on local folder we u
 ⭐git log : to check all the commits 
 ⭐UNDOING CHANGES: there are three scenarios
 1) staged changes: 
+### SYNTAX:
 git reset <filename>
 git reset (will reset all files after the latest commit)
 
 2) commited changes: (for one commit)
+### SYNTAX:
 git reset HEAD~1 (will move the head(last commit) backwards by 1 step)
 
 3) commited changes: (for multiple commits)
+### SYNTAX:
 git reset <commit hash code>
 git reset --hard <hash code> (will undo the changes on vs code also)
 
