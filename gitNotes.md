@@ -1,7 +1,7 @@
 # git notes
 
 ## ⭐ ' ~ ' represents that we are in the root directory of the system
-## ⭐ git - VCS (version control system) : an app installed on device that keep tracks of the changes so we install gitbash for windows
+## ⭐ git-VCS ( version control system ) : an app installed on device that keep tracks of the changes so we install gitbash for windows
 ## ⭐ Github is a website where we can reflect the changes and push the code and colaborate 
 
 ## basic commands:
@@ -10,7 +10,7 @@
     clear - clear screen
     pwd - to get the present working directory 
 
-# first step is to configure git so that by which account we are going to be making changes (local&global)
+# first step is to configure git so that by which account we are going to be making changes ( local & global )
 since we only have one git account so will use global and then all teh changes will be from that account no matter where we change
 ### SYNTAX: 
     git config --global user.name "name" (instrings)
